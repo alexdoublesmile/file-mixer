@@ -81,8 +81,7 @@ public class MixService {
     }
 
     private String cleanTheName(String fileName) {
-        return fileName.charAt(3) == '.'
-                ? fileName.substring(7)
-                : fileName;
+        int spaceIdx = fileName.indexOf(' ');
+        return fileName.substring(spaceIdx + 1);
     }
 }
