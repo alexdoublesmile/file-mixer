@@ -1,7 +1,9 @@
 package com.joyit;
 
+import com.joyit.service.MixService;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        new MixService().mix("G:\\Film\\3. Testmas");
     }
 }
